@@ -1,4 +1,4 @@
 # conway
 
-# Boids?
-# ImGui + OpenGL + CUDA
+- Boids?
+- ImGui + OpenGL + CUDA
