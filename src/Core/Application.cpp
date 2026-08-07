@@ -1,7 +1,5 @@
-// ===============================================//
-// ============== program lifecycle ==============//
-// ===============================================//
 #define "Application.h"
+// Imgui?
 
 class Application
 {
@@ -15,7 +13,15 @@ public: // member functions
     void stop();
 };
 
-void initalize();
-void run();
+void initalize() {
+
+}
+
+void run() {
+    while (true) {
+        // ...
+    }
+}
+
 bool is_running();
 void stop();
