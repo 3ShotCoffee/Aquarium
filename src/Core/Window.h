@@ -13,11 +13,14 @@ public:
     Window();
     ~Window();
 
-    void run();
+    bool should_close() { return glfwWindowShouldClose(window); }
+    void swap_buffers() { glfwSwapBuffers(window); }
+    void poll_events() { glfwPollEvents(); }
+
+    void process_input();
 
 private:
     GLFWwindow* window = nullptr;
     
     static void framebuffer_size_callback(GLFWwindow *window, int width, int height);
-    void process_input(GLFWwindow *window);
 };

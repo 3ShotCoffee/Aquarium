@@ -41,25 +41,8 @@ Window::~Window()
     glfwTerminate();
 }
 
-void Window::run() {
-    // rendering loop
-    while (!glfwWindowShouldClose(window))
-    {
-        // process input
-        process_input(window);
-
-        // render
-        // TODO : migrate to renderer
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        glfwSwapBuffers(window);    // swap buffers
-        glfwPollEvents();           // poll IO events
-    }
-}
-
 // process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
-void Window::process_input(GLFWwindow *window)
+void Window::process_input()
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
