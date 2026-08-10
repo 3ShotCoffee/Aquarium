@@ -1,2 +1,5 @@
-# private note
 note.txt
+.vscode
+
+out/
+build/
