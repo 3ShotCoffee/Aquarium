@@ -1,11 +1,10 @@
+#include "Core/Window.h"
 #include <iostream>
 
 int main() {
-    //Application app;
-    //if (app.initalize()) {
-    //    app.run();
-    //}
-    std::cout << "Hello World!\n";
+    Window window;
+
+    window.run();
 
     return 0;
-}
+}   // ~Window here
