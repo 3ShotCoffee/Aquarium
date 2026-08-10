@@ -1,7 +1,7 @@
 #pragma once
 
-#include <glad.h>
-#include <glfw3.h>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 // screen size
 const unsigned int SCR_WIDTH = 800;
